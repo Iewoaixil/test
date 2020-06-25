@@ -1,0 +1,56 @@
+<script src="../js/vue.js"></script>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+<style>
+    .acitve {
+        color: red;
+    }
+</style>
+
+<body>
+    <button>按钮一</button>
+    <button>按钮二</button>
+    <button>按钮三</button>
+    <button>按钮四</button>
+    <button>按钮五</button>
+    <div id="app">
+
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    // var b = document.getElementsByTagName("button");
+    // for (var i = 0; i < b.length; i++) {
+    //     (function(i) {
+    //         b[i].addEventListener('click', function() {
+    //             console.log(i);
+    //         })
+    //     })(i);
+    // }
+
+    let b = document.getElementsByTagName("button");
+    for (let i = 0; i < b.length; i++) {
+        b[i].addEventListener('click', function() {
+            console.log(i);
+        })
+    }
+    const app = new Vue({
+        el: '#app',
+        data: {
+
+        },
+        computed: {
+
+        },
+        methods: {
+
+        }
+    })
+</script>
